@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Webpacker
 
-Things you may want to cover:
+```
+% bin/rails webpacker:compile
+```
 
-* Ruby version
+```
+# app/javascript/packs内のファイルがエントリーポイントとなる
+% ls -1 public/packs
+js/
+manifest.json
+manifest.json.br
+manifest.json.gz
 
-* System dependencies
+# app/javascript/packs/application.jsをビルドした結果の成果物がapplication-xxx.jsになっている
+% ls -1 public/packs/js
+application-xxx.js
+application-xxx.js.br
+application-xxx.js.gz
+application-xxx.js.map
+application-xxx.js.map.br
+application-xxx.js.map.gz
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
