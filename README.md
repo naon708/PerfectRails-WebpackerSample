@@ -2,14 +2,14 @@
 
 ## Webpacker
 https://github.com/rails/webpacker
-> Webpacker has been retired
-> This bridge is no longer needed for most people in most situations following the release of Rails 7. 
+> Webpacker has been retired.  
+This bridge is no longer needed for most people in most situations following the release of Rails 7. 
 
-
+### コンパイル
 ```
 % bin/rails webpacker:compile
 ```
-
+### webpacker関連のコマンド
 ```
 % bin/rails help
 ....
@@ -36,6 +36,7 @@ webpacker:verify_install
 webpacker:yarn_install
 ....
 ```
+```
 # app/javascript/packs内のファイルがエントリーポイントとなる
 % ls -1 public/packs
 js/
@@ -54,7 +55,7 @@ application-xxx.js.map.gz
 ```
 
 ### Webpacker周りのファイル一覧
-```
+
 | パス      | 内容      |
 | ---           | ---           |
 | app/javascript/packs | エントリーファイルを置く場所 |
@@ -63,7 +64,7 @@ application-xxx.js.map.gz
 | config/webpack/*.js | 最終的なwebpackの設定を出力するファイル |
 | babel.config.js | babelの設定ファイル |
 | .browserlistrc | コンパイル対象となるブラウザを記述するファイル |
-```
+
 
 ### rails new 時にフロントフレームワークを導入するオプション
 ```
